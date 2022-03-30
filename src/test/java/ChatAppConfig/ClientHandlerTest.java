@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ClientHandlerTest {
 
     @Test
-    void checkConstructor(){
+    void checkSocketIsConnectedToClientHandler(){
         Socket socket = new Socket();
         ClientHandler actualClientHandler = new ClientHandler(socket);
         assertTrue(ClientHandler.clientHandlers.isEmpty());
